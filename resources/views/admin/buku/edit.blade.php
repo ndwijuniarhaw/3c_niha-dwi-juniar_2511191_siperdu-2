@@ -6,9 +6,8 @@
 @section('content')
   <div class="text-start">
     <form action="{{ route('admin.buku.update', $buku) }}" method="POST">
-    @csrf
+      @csrf
     @method('PUT')
- 
       @include('admin.buku._form')
  
       <div class="d-flex gap-2">

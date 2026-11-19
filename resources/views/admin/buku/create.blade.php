@@ -1,7 +1,7 @@
 @extends('layout.admin')
  
 @section('title', 'Tambah Buku')
-@section('subtitle', 'Isi formulir berikut untuk menambah buku baru')
+@section('subtitle', 'Tambahkan  buku baru')
  
 @section('content')
   <div class="text-start">
@@ -14,10 +14,9 @@
         <button type="submit" class="btn-custom btn-custom-primary">
           <i class="bi bi-check-lg"></i> Simpan
         </button>
-        <a href="{{ route('admin.buku.index') }}" class="btn-custom btn-custom-secondary">
-          Batal
-        </a>
+        <a href="{{ route('admin.buku.index') }}" class="btn-custom btn-custom-secondary">Batal</a>
       </div>
     </form>
   </div>
 @endsection
+
